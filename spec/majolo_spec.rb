@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 RSpec.describe Majolo do
   it 'has a version number' do
     expect(Majolo::VERSION).not_to be nil
