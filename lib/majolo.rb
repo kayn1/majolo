@@ -1,4 +1,4 @@
-require "majolo/version"
+require 'majolo/version'
 
 module Majolo
   class Error < StandardError; end
