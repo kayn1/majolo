@@ -10,6 +10,10 @@ module Majolo
       def perform_now(...)
         new.perform(...)
       end
+
+      def perform_async(...)
+        Thread.new { new.perform(...) }
+      end
     end
 
     def perform
