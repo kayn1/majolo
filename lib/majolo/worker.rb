@@ -11,8 +11,8 @@ module Majolo
         new.perform(...)
       end
 
-      def perform_async(...)
-        Thread.new { new.perform(...) }
+      def perform_async(*args)
+        Majolo.backend.push(worker: self, args: args)
       end
     end
 

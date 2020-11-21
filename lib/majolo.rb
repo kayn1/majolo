@@ -5,4 +5,10 @@ require 'majolo/worker'
 
 module Majolo
   class Error < StandardError; end
+
+  class << self
+    attr_accessor :backend
+  end
 end
+
+Majolo.backend = Queue.new
